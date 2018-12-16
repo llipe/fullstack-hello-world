@@ -1,4 +1,9 @@
 // app.js
+// .env shouldn't be used in production environments
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').load();
+  }
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -19,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 
-let port = 1234;
+let port = process.env.HTTP_PORT || 7000;
 app.listen(port, () => {
     console.log('Server running on port ' + port);
 });
