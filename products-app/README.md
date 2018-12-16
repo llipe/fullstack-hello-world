@@ -7,9 +7,9 @@ To run locally
 docker-compose up
 ```
 ## Endpoints
-Currently supports the following endpoints (swagger pending)
-host/ -> Product List
-host/:id -> Product details
-host/create -> Create product
-host'/:id/update -> Update product
-host/:id/delete -> Delete product
+Currently supports the following endpoints (swagger or [apiDoc](http://apidocjs.com) pending)
+* host/ -> Product List
+* host/:id -> Product details
+* host/create -> Create product
+* host'/:id/update -> Update product
+* host/:id/delete -> Delete product
