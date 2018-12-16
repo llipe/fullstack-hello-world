@@ -15,12 +15,15 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# App runs on port 1234
-EXPOSE 1234
+# App runs on port 3000
+EXPOSE 3000
 
 # To sync boot with Mongo
 ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.4.0/wait /wait
 RUN chmod +x /wait
 
 # Command to start the app
-CMD /wait && npm start
+# CMD /wait && npm start
+
+# Starting without waiting
+CMD npm start

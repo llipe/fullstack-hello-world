@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     ports:
-      - "1234:1234"
+      - "8000:1234"
     links:
       - mongo
     depends_on:

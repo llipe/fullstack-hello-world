@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 
-let port = process.env.HTTP_PORT || 1234;
+let port = process.env.HTTP_PORT || 3000;
 app.listen(port, () => {
     console.log('Server running on port ' + port);
 });
