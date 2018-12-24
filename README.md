@@ -26,4 +26,8 @@ npm start
 npm run ios
 ```
 
+Notes on structuring the folders for a scalable react native app:
+* https://medium.com/the-andela-way/how-to-structure-a-react-native-app-for-scale-a29194cd33fc
+* https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0
+
 Tips: https://gist.github.com/llipe/b9a78430e84d2d09812e08a9cb526052
